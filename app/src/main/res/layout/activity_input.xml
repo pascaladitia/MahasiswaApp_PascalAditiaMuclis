@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="18dp"
+    tools:context=".InputActivity">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/staff_avatar"
+        android:layout_width="230dp"
+        android:layout_height="230dp"
+        android:layout_margin="20dp"
+        android:src="@drawable/foto"
+        android:layout_gravity="center"
+        app:civ_border_color="@color/colorPrimary"
+        app:civ_border_width="5dp"/>
+
+    <EditText
+        android:id="@+id/edt_nama"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bgg_edt_text"
+        android:padding="10dp"
+        android:hint="Nama"/>
+
+    <EditText
+        android:id="@+id/edt_nohp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/bgg_edt_text"
+        android:padding="10dp"
+        android:hint="No HP"/>
+
+    <EditText
+        android:id="@+id/edt_alamat"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/bgg_edt_text"
+        android:padding="10dp"
+        android:hint="Alamat"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp">
+
+        <Button
+            style="@style/Widget.AppCompat.Button.Colored"
+            android:id="@+id/btn_simpan"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Simpan"/>
+
+        <Button
+            style="@style/Widget.AppCompat.Button.Colored"
+            android:id="@+id/btn_cancel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginLeft="5dp"
+            android:text="Batal"/>
+    </LinearLayout>
+
+</LinearLayout>
